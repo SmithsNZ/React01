@@ -1,0 +1,33 @@
+<!--
+     https://www.fullstackreact.com/articles/what-are-babel-plugins-and-presets/
+     good book is fullstack react
+     see https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html
+     for production and add-ons libraries
+-->
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href = "./scripts/site.css">
+      <script src="https://fb.me/react-15.0.1.js"></script>
+      <script src="https://fb.me/react-dom-15.0.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.3/react-redux.js"></script>
+  </head>
+  <body>
+    <button onclick="store.dispatch(addTodo('Walk dog')); console.log(store.getState());">Add Walk Dog Todo</button>
+    <button onclick="store.dispatch(addAuthor('Billy Bob', 'Assistant Editor')); console.log(store.getState());">Add Billy Bob Author</button>
+
+    <div id="rrcontainer"></div>
+    <div id="root0"></div>
+    <div id="root1"></div>
+    <div id="root2"></div>
+    <div id="rootclock"></div>
+    <div id="rootclock2"></div>
+    <div id="rootclock3"></div>
+    <div id="rootclock4"></div>
+    <div id="cooker"></div>
+    <div id="cooker2"></div>
+
+  </body>
+  <script type="text/babel" src="./scripts/main.js"></script>
+</html>
